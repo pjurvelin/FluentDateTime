@@ -7,6 +7,7 @@ namespace FluentDate
     public struct FluentTimeSpan : IEquatable<FluentTimeSpan>, IComparable<TimeSpan>, IComparable<FluentTimeSpan>
     {
         public const int daysPerYear = 365;
+        public const int daysPerLeapYear = 366;
         public int Months { get; set; }
         public int Years { get; set; }
         public TimeSpan TimeSpan { get; set; }
